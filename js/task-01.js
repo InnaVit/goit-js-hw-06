@@ -1,10 +1,10 @@
-const categoriesRef = document.querySelectorAll('li.item');
+const categoriesEl = document.querySelectorAll('li.item');
 
-const numberOfCategoriesRef = categoriesRef.length;
+const numberOfCategories = categoriesEl.length;
 
-console.log(`Number of categories: ${numberOfCategoriesRef}`);
+console.log(`Number of categories: ${numberOfCategories}`);
 
-const categoryRef = categoriesRef.forEach(el => {
+const categoryEl = categoriesEl.forEach(el => {
     const category = el.firstElementChild.textContent;
     const elements = el.lastElementChild.children.length;
     console.log(`Category: ${category} 
